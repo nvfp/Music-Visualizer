@@ -120,7 +120,7 @@ def render(
         '; [0:a]'
             'showfreqs='
             's=626x179'
-            f': rate={r}'  # it looks like some versions of ffmpeg have this bug, comment out this line if your ffmpeg doesn't support this option
+            f': rate={r}'  #BUG: it looks like some versions of ffmpeg have this bug, comment out this line if your ffmpeg doesn't support this option
             f': mode=line'
             f': cmode=separate'
             f': ascale=cbrt'

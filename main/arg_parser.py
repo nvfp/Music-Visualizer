@@ -328,7 +328,7 @@ class Args:
 
     ## (@ Apr 5, 2023) The author suspects this is a bug from FFmpeg internal.
     ## To get the color right, we need to flip the red and blue channels.
-    ## If the bug doesn't exist for your ffmpeg, simply comment out the line below.
+    ## If the bug doesn't exist for your ffmpeg, simply comment out the line below*
     vol_color = '#' + args.vol_color[5:7] + args.vol_color[3:5] + args.vol_color[1:3]
     vol_color = convert(vol_color)
-    # vol_color = convert(args.vol_color)
+    # vol_color = convert(args.vol_color)  # *and use this instead
