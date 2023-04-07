@@ -10,6 +10,10 @@ Visualizing various aspects of music: CQT, channel differences, spectrums, waves
 2. Install [FFmpeg](https://ffmpeg.org/download.html) on your machine, if it is not already installed.
 
 ## Introductory usage
+- Take a look at all the available options
+    ```sh
+    python Music-Visualizer -h
+    ```
 - Single file
     ```sh
     python Music-Visualizer -i music.mp3
@@ -47,7 +51,7 @@ Visualizing various aspects of music: CQT, channel differences, spectrums, waves
     python Music-Visualizer -i music.m4a -r 60
     ```
 
-## Customized color
+## Customized style
 - custom title font:
     - Linux:
         ```sh
@@ -62,7 +66,7 @@ Visualizing various aspects of music: CQT, channel differences, spectrums, waves
         python Music-Visualizer -i music.m4a -tf /Library/Fonts/Arial.ttf
         ```
 - color scheme:
-    ```shell
+    ```sh
     python Music-Visualizer -i music.m4a -pc #fafbfa -wcl #3280c9 -wcr #32c958 -vc #ee2020
     ```
 
