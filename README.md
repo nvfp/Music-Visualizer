@@ -1,7 +1,7 @@
 ## Music-Visualizer
 Visualizing various aspects of music: CQT, channel differences, spectrums, waves, power, and volumes.
 
-[![An example of the visualization](/img.jpg)](https://www.youtube.com/watch?v=OXY-12lkqgE)
+[![An example of the visualization](/demo.gif)](https://www.youtube.com/watch?v=OXY-12lkqgE)
 
 ### [Demo video](https://www.youtube.com/watch?v=OXY-12lkqgE).
 

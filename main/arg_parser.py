@@ -44,14 +44,15 @@ parser.add_argument(
 parser.add_argument(
     '-r', '--frame_rate',
     type=int, default=24,
-    help='The number of frames per second (FPS), default is 24.'
+    help='The number of frames per second (FPS) for the output, default is 24.'
 )
 
 parser.add_argument(
     '-tf', '--title_font',
     default='c\:/Windows/Fonts/Arial.ttf',
     help=(
-        'Absolute path to the font file. '
+        'Font that used for words like "CQT" and "Diff". '
+        'Specify the absolute path to the font file. '
         'Linux/Unix (~/.fonts/arial.ttf), Windows (C:\Windows\Fonts\\arial.ttf), MacOS (/Library/Fonts/Arial.ttf). '
         'Default font: "c\:/Windows/Fonts/Arial.ttf"'
     )
@@ -64,18 +65,18 @@ parser.add_argument(
 parser.add_argument(
     '-pc', '--pad_color',
     default='#e6cbe6',
-    help='Default: #e6cbe6'
+    help='The border color. Default: #e6cbe6'
 )
 
 parser.add_argument(
     '-ccl', '--cqt_color_left',
     default='#2673d9',
-    help='Color for the left channel. Default: #2673d9'
+    help='CQT color, for the left channel. Default: #2673d9'
 )
 parser.add_argument(
     '-ccr', '--cqt_color_right',
     default='#03753d',
-    help='Color for the right channel. Default: #03753d'
+    help='CQT color, for the right channel. Default: #03753d'
 )
 parser.add_argument(
     '-cg', '--cqt_gamma',
@@ -133,6 +134,7 @@ parser.add_argument(
     '-sc', '--spec_color',
     default='intensity',
     help=(
+        'The spectrum color types. '
         'Options: channel, intensity, rainbow, moreland, nebulae, '
         'fire, fiery, fruit, cool, magma, green, viridis, plasma, '
         'cividis, terrain. Default: intensity'
@@ -141,7 +143,7 @@ parser.add_argument(
 parser.add_argument(
     '-ss', '--spec_scale',
     default='5thrt',
-    help='Options: lin, sqrt, cbrt, 4thrt, 5thrt, log. Default: terrain'
+    help='Options: lin, sqrt, cbrt, 4thrt, 5thrt, log. Default: 5thrt'
 )
 parser.add_argument(
     '-ssa', '--spec_saturation',
@@ -170,17 +172,17 @@ parser.add_argument(
 parser.add_argument(
     '-wcl', '--waves_color_left',
     default='#ff4949',
-    help='Left channel. Default: #ff4949'
+    help='For the left channel. Default: #ff4949'
 )
 parser.add_argument(
     '-wcr', '--waves_color_right',
     default='#4dbffc',
-    help='Right channel. Default: #4dbffc'
+    help='For the right channel. Default: #4dbffc'
 )
 parser.add_argument(
     '-vc', '--vol_color',
     default='#032341',
-    help='Default: #032341'
+    help='Volume bars color. Default: #032341'
 )
 
 args = parser.parse_args()
