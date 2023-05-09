@@ -12,14 +12,14 @@ parser.add_argument('--version', action='version', version=f'%(prog)s {SOFTWARE_
 parser.add_argument(
     '-i', '--input',
     default=INPUT_DIR,
-    help=f'Absolute path to input file (single input) or directory (multiple inputs). Default: {INPUT_DIR}'
+    help=f'Absolute path to input file (single input) or directory (multiple inputs). Default: {repr(INPUT_DIR)}'
 )
 parser.add_argument(
     '-o', '--output',
     # default=OUTPUT_DIR,  # this line purposely commented to make the default set to `None`
     help=(
         'If -i is a directory path, the output folder will be set to the input folder. '
-        f'Otherwise, if -i is a file path or not specified, the default {OUTPUT_DIR} will be used.'
+        f'Otherwise, if -i is a file path or not specified, the default {repr(OUTPUT_DIR)} will be used.'
     )
 )
 parser.add_argument(
